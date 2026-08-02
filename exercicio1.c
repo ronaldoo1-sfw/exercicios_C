@@ -7,11 +7,11 @@ Faça um programa que receba 3 notas, mostre a média ponderada e o seguinte con
 int main(){
     float trab_lab, aval_sem, exam_fin, nota_final;
 
-    printf("Digite a nota do trabalho de laboratorio: \n");
+    printf("Digite a nota do trabalho de laboratorio:\n");
     scanf("%f", &trab_lab);
-    printf("Digite a nota da avaliacao semestral: \n");
+    printf("Digite a nota da avaliacao semestral:\n");
     scanf("%f", &aval_sem);
-    printf("Digite a nota do exame final: \n");
+    printf("Digite a nota do exame final:\n");
     scanf("%f", &exam_fin);
 
     nota_final = ((trab_lab * 2) + (aval_sem * 3) + (exam_fin * 5)) / 10;
