@@ -36,7 +36,7 @@ int main(){
 
     fp = final_price(fac_price, t, p);
 
-    printf("The final price of the veichle is: %.2f\n", fp);
+    printf("The final price of the veichle is: %.2f \n", fp);
 
     return 0;
 }
