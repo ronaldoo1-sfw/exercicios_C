@@ -6,10 +6,10 @@ variável auxiliar.*/
 int main(){
     int a, b;
 
-    printf("Digite um valor para A: \n");
+    printf("Digite um valor para A:\n");
     scanf("%d", &a);
 
-    printf("Digite um valor para B: \n");
+    printf("Digite um valor para B:\n");
     scanf("%d", &b);
 
     a = a ^ b;

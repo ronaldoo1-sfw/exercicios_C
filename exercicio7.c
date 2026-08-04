@@ -14,9 +14,9 @@ int main(){
         scanf("%d", &vetor[i]);
     }
 
-    printf("Os numeros digitados foram:\n");
-    for(i=0; i<tamanho; i++){
-        printf("%d\n", vetor[i]);
+    printf("Os numeros na ordem inversa sao:\n");
+    for(i=tamanho - 1; i>= 0; i--){
+         printf("Na posicao %d: %d\n", i + 1, vetor[i]);
     }
 
     free(vetor);
