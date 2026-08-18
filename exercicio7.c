@@ -1,25 +1,24 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+typedef struct{
+    char team[30];
+    char version[20];
+    char type[10];
+    char size[5];
+    int year;
+}shirt;
+
+shirt adding(){
+}
+
 int main(){
-    int tamanho, *vetor, i;
 
-    printf("Digite a quantidade de numeros que deseja digitar:\n");
-    scanf("%d", &tamanho);
+int amount;
 
-    vetor = (int *) malloc(tamanho * sizeof(int));
+printf("Type the amount of shirts you want to add:\n");
+scanf("%d", &amount);
 
-    for(i=0; i<tamanho; i++){
-        printf("Digite o numero %d:\n", i + 1);
-        scanf("%d", &vetor[i]);
-    }
+shirt *list = (shirt*) calloc(amount, sizeof(shirt));
 
-    printf("Os numeros na ordem inversa sao:\n");
-    for(i=tamanho - 1; i>= 0; i--){
-         printf("Na posicao %d: %d\n", i + 1, vetor[i]);
-    }
-
-    free(vetor);
-
-    return 0;
 }
