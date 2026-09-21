@@ -377,4 +377,40 @@ int main()
 return 0;
 }
 
+19. Leia um número e informe se ele é divisível por 3 e por 2 ao mesmo tempo.
+#include <stdio.h>
+
+int main()
+{
+    int numero;
+    
+    printf("Digite um numero: \n");
+    scanf("%d", &numero);
+    
+    if(numero % 3 == 0 && numero % 2 == 0){
+        printf("E divisivel por 2 e 3!");
+    }
+    
+return 0;
+}
+
+
+20. Leia um ano e informe se a pessoa pode dirigir (idade >= 18 – adapte com idade).
+#include <stdio.h>
+
+int main()
+{
+    int ano, idade;
+    
+    printf("Digite o ano de nascimento: \n");
+    scanf("%d", &ano);
+    
+    idade = 2026 - ano;
+    
+    if(idade>=18){
+        printf("Pode dirigir!");
+    }
+    
+return 0;
+}
 */
