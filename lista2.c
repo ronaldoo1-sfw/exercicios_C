@@ -283,7 +283,7 @@ int main()
 }
 
 
-Leia dois números e informe o menor deles.
+14. Leia dois números e informe o menor deles.
 #include <stdio.h>
 
 int main()
@@ -303,6 +303,41 @@ int main()
         printf("Sao iguais");
     }
 
+    return 0;
+}
+
+15. Leia a idade e informe se pode votar (idade >= 16).
+#include <stdio.h>
+
+int main()
+{
+    int idade;
+    
+    printf("Digite uma idade: \n");
+    scanf("%d", &idade);
+    
+    if(idade >= 16){
+        printf("Pode votar!");
+    }
+    
+    return 0;
+}
+
+
+16. Leia a idade e informe se o voto é obrigatório (idade >= 18 && idade < 70).
+#include <stdio.h>
+
+int main()
+{
+    int idade;
+    
+    printf("Digite uma idade: \n");
+    scanf("%d", &idade);
+    
+    if(idade >= 18 && idade < 70){
+        printf("Votar e obrigatorio!");
+    }
+    
     return 0;
 }
 
