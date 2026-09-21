@@ -260,4 +260,50 @@ int main()
 
 return 0;
 }
+
+13. Leia um número e classifique como positivo, negativo ou zero.
+#include <stdio.h>
+
+int main()
+{
+    int numero;
+    
+    printf("Digite um numero: \n");
+    scanf("%d", &numero);
+    
+    if(numero>0){
+        printf("E positivo!");
+    }else if(numero<0){
+        printf("E negativo!");
+    }else{
+        printf("Sao iguais!");
+    }
+
+    return 0;
+}
+
+
+Leia dois números e informe o menor deles.
+#include <stdio.h>
+
+int main()
+{
+    int numero1, numero2;
+    
+    printf("Digite o primeiro numero: \n");
+    scanf("%d", &numero1);
+    printf("Digite o segundo numero: \n");
+    scanf("%d", &numero2);
+    
+    if(numero1<numero2){
+        printf("O numero 1 e menor que o numero 2");
+    }else if(numero2<numero1){
+        printf("O numero 2 e menor que o numero 1");
+    }else{
+        printf("Sao iguais");
+    }
+
+    return 0;
+}
+
 */
