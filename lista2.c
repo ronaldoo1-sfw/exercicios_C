@@ -279,7 +279,7 @@ int main()
         printf("Sao iguais!");
     }
 
-    return 0;
+return 0;
 }
 
 
@@ -303,7 +303,7 @@ int main()
         printf("Sao iguais");
     }
 
-    return 0;
+return 0;
 }
 
 15. Leia a idade e informe se pode votar (idade >= 16).
@@ -320,7 +320,7 @@ int main()
         printf("Pode votar!");
     }
     
-    return 0;
+return 0;
 }
 
 
@@ -338,7 +338,43 @@ int main()
         printf("Votar e obrigatorio!");
     }
     
-    return 0;
+return 0;
+}
+
+17. Leia um salário e informe se é maior que 2000.
+#include <stdio.h>
+
+int main()
+{
+    int salario;
+    
+    printf("Digite um salario: \n");
+    scanf("%d", &salario);
+    
+    if(salario > 2000){
+        printf("O salario e maior que 2000!");
+    }
+    
+return 0;
+}
+
+18. Leia a temperatura e informe se está frio (< 20) ou quente (>= 20).
+#include <stdio.h>
+
+int main()
+{
+    int temperatura;
+    
+    printf("Digite uma temperatura: \n");
+    scanf("%d", &temperatura);
+    
+    if(temperatura>=20){
+        printf("Esta quente!");
+    }else{
+        printf("Esta firo!");
+    }
+    
+return 0;
 }
 
 */
