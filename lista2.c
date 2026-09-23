@@ -200,20 +200,19 @@ int main(){
    
    int numero, i, soma = 1;
    
-   printf("Digite um numero inteiro: \n");
-   scanf("%d", &numero);
+    printf("Digite um numero inteiro: \n");
+    scanf("%d", &numero);
    
-  for(i=numero; i>0; i--){
+    for(i=numero; i>0; i--){
       
     printf("%d * ", i);
     
     soma *= i;
-     
-  }
+     }
   
-  printf("= %d", soma);
+    printf("= %d", soma);
 
-return 0;
+    return 0;
 }
 
 11. Faça um programa que leia 10 números e calcule a média deles.
@@ -226,17 +225,17 @@ int main()
    
    for(i=0; i<=9; i++){
        
-       printf("Digite um numero: \n");
-       scanf("%d", &numeros[i]);
+    printf("Digite um numero: \n");
+    scanf("%d", &numeros[i]);
        
-       soma += numeros[i];
+    soma += numeros[i];
        
-   }
+    }
    
-   printf("Media: %d\n", (soma/10));
+    printf("Media: %d\n", (soma/10));
    
 
-return 0;
+    return 0;
 }
 
 
@@ -256,9 +255,9 @@ int main()
        
    }while(i!=0);
    
-   printf("A soma foi: %d", soma);
+    printf("A soma foi: %d", soma);
 
-return 0;
+    return 0;
 }
 
 13. Leia um número e classifique como positivo, negativo ou zero.
@@ -279,7 +278,7 @@ int main()
         printf("Sao iguais!");
     }
 
-return 0;
+    return 0;
 }
 
 
@@ -303,7 +302,7 @@ int main()
         printf("Sao iguais");
     }
 
-return 0;
+    return 0;
 }
 
 15. Leia a idade e informe se pode votar (idade >= 16).
@@ -320,7 +319,7 @@ int main()
         printf("Pode votar!");
     }
     
-return 0;
+    return 0;
 }
 
 
@@ -338,7 +337,7 @@ int main()
         printf("Votar e obrigatorio!");
     }
     
-return 0;
+    return 0;
 }
 
 17. Leia um salário e informe se é maior que 2000.
@@ -355,7 +354,7 @@ int main()
         printf("O salario e maior que 2000!");
     }
     
-return 0;
+    return 0;
 }
 
 18. Leia a temperatura e informe se está frio (< 20) ou quente (>= 20).
@@ -374,7 +373,7 @@ int main()
         printf("Esta firo!");
     }
     
-return 0;
+    return 0;
 }
 
 19. Leia um número e informe se ele é divisível por 3 e por 2 ao mesmo tempo.
@@ -391,7 +390,7 @@ int main()
         printf("E divisivel por 2 e 3!");
     }
     
-return 0;
+    return 0;
 }
 
 
@@ -411,6 +410,6 @@ int main()
         printf("Pode dirigir!");
     }
     
-return 0;
+    return 0;
 }
 */
