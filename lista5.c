@@ -112,25 +112,40 @@ int main(){
     return 0;
 }
 
-5.
-Crie uma struct Endereco com:
+5.Crie uma struct Endereco com:rua e número. Depois crie uma struct Pessoa com:nome, idade e endereço. Leia os dados e exiba tudo.
 
-rua
+#include <stdio.h>
 
-número
+typedef struct{
+char rua[60];
+int numero;
+} Endereco;
 
-Depois crie uma struct Pessoa com:
+typedef struct{
+char nome[60];
+int idade;
+Endereco end;
+} Pessoa;
 
-nome
+int main(){
+    Pessoa p;
 
-idade
+    printf("Digite o nome: \n");
+    scanf(" %[^\n]", p.nome);
+    printf("Digite a idade: \n");
+    scanf("%d", &p.idade);
+    printf("Digite a rua: \n");
+    scanf(" %[^\n]", p.end.rua);
+    printf("Digite o numero: \n");
+    scanf(" %d", &p.end.numero);
+    printf("O nome eh: %s \n", p.nome);
+    printf("A idade eh: %d \n", p.idade);
+    printf("A rua eh %s \n", p.end.rua);
+    printf("O numero eh: %d \n", p.end.numero);
 
-endereço
-
-Leia os dados e exiba tudo.
-
+    return 0;
+}
  
-
 6.
 Crie uma função que receba uma struct Produto e exiba seus dados.
 
