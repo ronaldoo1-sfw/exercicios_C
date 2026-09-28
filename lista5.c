@@ -29,27 +29,88 @@ int main(){
 
 2.Usando typedef, crie uma struct chamada Livro com: título, autor e número de páginas. Leia os dados e exiba.
 
-3.
-Crie um vetor de 3 structs do tipo Aluno contendo:
+#include <stdio.h>
 
-nome
+typedef struct{
+char titulo[50];
+char autor[50];
+int paginas;
+} Livro;
 
-média
+int main(){
+    Livro l1;
 
-Leia os dados dos 3 alunos e exiba todos ao final.
+    printf("Digite o titulo do livro: \n");
+    scanf(" %[^\n]", l1.titulo);
+    printf("Digite o autor do liro: \n");
+    scanf(" %[^\n]", l1.autor);
+    printf("Digite o numero de paginas: \n");
+    scanf(" %d", &l1.paginas);
+    printf("DADOS DO LIVRO\n");
+    printf("Titulo do livro: %s \n", l1.titulo);
+    printf("Autor do livro: %s \n", l1.autor);
+    printf("Numero de paginas: %d \n", l1.paginas);
+    
+    return 0;
+}
 
+3.Crie um vetor de 3 structs do tipo Aluno contendo: nome e média. Leia os dados dos 3 alunos e exiba todos ao final.
+
+#include <stdio.h>
+
+typedef struct{
+char nome[60];
+float media;
+} Aluno;
+
+int main(){
+    Aluno turma[3];
+    int i;
+
+    for(i=0; i<3; i++){
+        printf("Digite o nome do aluno %d : \n", i + 1);
+        scanf(" %[^\n]", turma[i].nome);
+        printf("Digite a idade do aluno %d: \n", i + 1);
+        scanf(" %f", &turma[i].media);
+    }
+
+    for(i=0; i<3; i++){
+        printf("DADOS DO ALUNO\n");
+        printf("Nome do aluno %d: %s \n", i + 1, turma[i].nome);
+        printf("Nota do aluno %d: %.2f \n", i + 1, turma[i].media);
+    }
+
+    return 0;
+}
  
+4.Crie uma struct Funcionario com: nome e salário. Leia os dados de 2 funcionários e mostre qual deles tem o maior salário.
 
-4.
-Crie uma struct Funcionario com:
+#include <stdio.h>
 
-nome
+typedef struct{
+char nome[60];
+float salario;
+} Funcionario;
 
-salário
+int main(){
+    Funcionario f[2];
+    int i;
 
-Leia os dados de 2 funcionários e mostre qual deles tem o maior salário.
+    for(i=0; i<2; i++){
+        printf("Digite o nome do funcionario %d : \n", i + 1);
+        scanf(" %[^\n]", f[i].nome);
+        printf("Digite o salario do funcionario %d: \n", i + 1);
+        scanf(" %f", &f[i].salario);
+    }
 
- 
+    if(f[0].salario > f[1].salario){
+        printf("O maior salario é do funcionario: %s", f[0].nome);
+    }else{
+        printf("O maior salario é do funcionario: %s", f[1].nome);
+    }
+
+    return 0;
+}
 
 5.
 Crie uma struct Endereco com:
