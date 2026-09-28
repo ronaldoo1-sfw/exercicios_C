@@ -138,6 +138,7 @@ int main(){
     scanf(" %[^\n]", p.end.rua);
     printf("Digite o numero: \n");
     scanf(" %d", &p.end.numero);
+    
     printf("O nome eh: %s \n", p.nome);
     printf("A idade eh: %d \n", p.idade);
     printf("A rua eh %s \n", p.end.rua);
